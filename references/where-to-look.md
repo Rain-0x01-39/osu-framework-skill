@@ -1,11 +1,10 @@
 # Where to look
 
-Task-indexed pointers into the local corpus. Read the listed local source **before** guessing an API.
+Task-indexed pointers into the upstream corpus. Read the listed source **before** guessing an API.
 
-Paths are relative to:
-- wiki = `C:\repos\osu-framework.wiki`
-- framework = `C:\repos\osu-framework`
-- tests = `C:\repos\osu-framework\osu.Framework.Tests`
+Paths are repo-relative: `wiki` = `github.com/ppy/osu-framework/wiki`, `framework` =
+`github.com/ppy/osu-framework`, `tests` = `framework/osu.Framework.Tests`. Use a local clone if present,
+otherwise fetch from GitHub.
 
 | Want to… | Wiki page | Local example / source |
 |---|---|---|

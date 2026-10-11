@@ -30,21 +30,22 @@ Project names must have **no spaces or hyphens** (the templating system breaks o
 The template also emits `MyGame.iOS` but **no Android head** — for Android, copy the head from the
 framework's own `SampleGame.Android` or from ppy/osu.
 
-## Reference corpus — read local sources before inventing APIs
+## Reference corpus — read upstream before inventing APIs
 
-These are on disk and are the ground truth; prefer them over guessing:
+The ground truth is the upstream `ppy/osu-framework` repo and its wiki. If a local clone is present, read
+it directly; otherwise fetch from GitHub.
 
-- Framework source checkout: `C:\repos\osu-framework`
+- Source: `github.com/ppy/osu-framework`
   - `SampleGame/` — minimal game (`SampleGameGame.cs`) — read this first.
   - `osu.Framework.Tests/Visual/` — hundreds of `TestScene`s; the best living API examples.
   - `osu.Framework/` — the actual API (Drawable, Bindable, transforms, layout).
-- Wiki: `C:\repos\osu-framework.wiki`
-  - `Setting-up-your-first-project.md` (start here), `Bindable-Flow.md`, `Dependency-Injection.md`,
-    `Coordinate-and-Layout-System.md`, `Transforms-and-tweening.md`, `Development-and-Testing.md`.
+- Wiki: `github.com/ppy/osu-framework/wiki`
+  - `Setting-up-your-first-project`, `Bindable-Flow`, `Dependency-Injection`,
+    `Coordinate-and-Layout-System`, `Transforms-and-tweening`, `Development-and-Testing`.
 
-**Rule:** when unsure how an API is used, grep the framework source or the Tests project — do not guess.
+**Rule:** when unsure how an API is used, read the source or the Tests project — do not guess.
 
-**Quick index:** `references/where-to-look.md` maps common tasks to the exact wiki page and local example to read.
+**Quick index:** `references/where-to-look.md` maps common tasks to the wiki page and example to read.
 
 ## Workflow
 
