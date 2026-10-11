@@ -77,4 +77,4 @@ shows it visually and runs it under NUnit. Use this to iterate fast without runn
 - Never block the update thread; use `Scheduler.Add` / async loading, not `Thread.Sleep`.
 - Prefer existing framework controls (`Box`, `SpriteText`, `Container`, `FillFlowContainer`) before writing new ones.
 - Keep the first version small: a screen with a spinning `Box` proves the pipeline. Grow from there.
-- The wiki's window/renderer page is stale (says SDL2); current code defaults to SDL3 outside macOS.
+- Treat the wiki as **lower priority than the source and Tests** — parts are stale (e.g. the window/renderer page still says SDL2; current code defaults to SDL3 outside macOS). When they disagree, source wins.
